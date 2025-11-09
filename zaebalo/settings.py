@@ -1,10 +1,10 @@
-
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-gz@&+$ee#$j@5@x9f^0+)k2!wje6+nl^sf94(!lx*)%h&f@+-h'
+SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
 
